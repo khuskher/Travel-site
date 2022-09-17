@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title>Wanderlust</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rbg(234, 210, 168);
+        }
+
+        .logo {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100px;
+            width: 100px;
+        }
+
+        .topnav {
+            color: black;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .topnav a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px 20px;
+            display: inline-block;
+            justify-items: flex-end;
+            text-align: center;
+            float: left;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black
+        }
+
+        .header {
+            background: linear-gradient(rgba(193, 128, 49, 0.586), rgb(255, 255, 255, 0.5)),
+                url(https://img.freepik.com/free-vector/crystal-textured-background-illustration_53876-81832.jpg?w=360);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-size: 50px;
+            height: 100vh;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            padding: 20%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        #about {
+            padding: 10%;
+            background-color: rbg(234, 210, 168);
+        }
+
+        #about h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #765341;
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #about p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        #about img {
+            width: 65%;
+            height: 450px;
+            margin: 2px;
+        }
+
+        #video {
+            padding: 10%;
+        }
+
+        #video h3 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #765341;
+            font-size: 45px;
+            margin: 2px;
+            text-align: center;
+
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 50%;
+            height: 0;
+        }
+
+        .container iframe {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #contact {
+            padding: 10%;
+            background-color: rbg(234, 210, 168);
+
+        }
+
+        #contact h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: #765341;
+            font-size: 45px;
+            margin: 2px;
+        }
+
+        #contact h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin: 2px;
+            margin-top: 15px;
+        }
+
+        #contact p {
+            font-size: 25px;
+            margin: 2px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            height: 25px;
+            font-size: 20px;
+            margin: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <img src="logo.png" class="logo">
+    </div>
+
+    <div class="topnav">
+        <a href="main.html">Home</a>
+        <a href="#about">About</a>
+        <a href="resto.html">Cafe/resto</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <div class="header">
+        <h1>WANDERLUST</h1>
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="column">
+                <img src="https://w0.peakpx.com/wallpaper/183/987/HD-wallpaper-city-building-cloud-gujarat-india-nature-sun-sunset-surat-view.jpg"
+                    alt="image1">
+            </div>
+            <div class="column">
+                <h1>About</h1>
+                <p> Are you looking for places to visit? Well this is the right place for you!<br><br>
+
+                    Hi there! Khushi here. I'm a student at SVNIT, Surat. Being new here, I was obviously curious and
+                    excited to explore the places nearby. However,
+                    due to lack of resources or information, I was able to do so. So I thought why not
+                    make one such site where people like me can
+                    come to. Hence, this site. ;)
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="video">
+        <h3>It's video time!</h3>
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dVZSHBVx8_Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="row">
+            <div class="column">
+                <h2>Contact Me</h2>
+
+                <h4>Phone Number</h4>
+                <p>8799353221</p>
+
+                <h4>Email</h4>
+                <p>khus.kher@gamil.com</p>
+
+                <h4>Address</h4>
+                <p>SVNIT,<br> Surat, Gujarat, <br> India, 395007</p>
+            </div>
+            <div class="column">
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="tel" placeholder="Mobile Number">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="What is your query?">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
